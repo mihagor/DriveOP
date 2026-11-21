@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="sl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08111f">
+  <title>DriveOP | Od iskanja do odločitve</title>
+  <meta name="description" content="DriveOP: 12-slajdni petminutni pitch z demonstracijo prototipa, govornimi opombami in viri.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#toolbar">Na upravljanje predstavitve</a>
+  <div class="viewport" id="viewport">
+    <main class="stage" id="stage" aria-label="DriveOP predstavitev">
+      <header class="stage-header">
+        <a class="wordmark" href="#1" aria-label="DriveOP - prvi slajd">Drive<span>OP</span><i></i></a>
+        <span class="chapter" id="chapter">01 / PROBLEM</span>
+        <span class="edition">OD ISKANJA DO ODLOČITVE</span>
+      </header>
+
+      <section class="slide active problem" id="s1" aria-label="1. Problem">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="small-dot"></span> NASLEDNJI DRUŽINSKI AVTO</div>
+          <h1>Avto ti je všeč.<br>Pa ustreza<br><em>tvojemu življenju?</em></h1>
+          <p class="lead">Oglasov ne manjka.<br>Manjka jasen <strong>&raquo;zakaj ta avto?&laquo;</strong></p>
+          <div class="quiet-label">Predlagani prvi fokus: kupci v Sloveniji.</div>
+        </div>
+        <div class="hero-art" aria-label="Ilustracija treh vprašanj ob izbiri avtomobila">
+          <div class="orb orb-one"></div><div class="orb orb-two"></div>
+          <div class="ring ring-one"></div><div class="ring ring-two"></div>
+          <div class="car-display"><img src="assets/taste-card.webp" alt="Avtomobil na kartici iz prototipa DriveOP"><div class="car-caption">VŠEČ MI JE.</div></div>
+          <div class="question q1"><span>01</span> Kaj potrebujem?</div>
+          <div class="question q2"><span>02</span> Kako vozim?</div>
+          <div class="question q3"><span>03</span> Koliko me bo stal?</div>
+          <div class="choice-line">VELIKO MOŽNOSTI <b>&ne;</b> DOBRA ODLOČITEV</div>
+        </div>
+        <p class="source-line">Ilustrativen problem in predlagani segment; uporabniška validacija še sledi.</p>
+      </section>
+
+      <section class="slide solution" id="s2" aria-label="2. Rešitev">
+        <div class="split-copy">
+          <div class="eyebrow">OSEBNI SVETOVALEC ZA IZBIRO AVTOMOBILA</div>
+          <h1>Najprej <em>ti.</em><br>Potem avto.</h1>
+          <p class="lead">Tvoj okus. Tvoj vsakdan.<br>Tvoj finančni okvir.</p>
+          <div class="statement">Ne še en seznam oglasov.<br><strong>Izbor, ki ga razumeš.</strong></div>
+        </div>
+        <div class="decision-system" aria-label="Okus, potrebe in proračun vodijo do osebnega izbora">
+          <div class="system-grid"></div>
+          <div class="signal signal1"><span class="signal-symbol">&#9825;</span><b>OKUS</b><small>Kaj mi je všeč?</small></div>
+          <div class="signal signal2"><span class="signal-symbol">&#9678;</span><b>POTREBE</b><small>Kako živim?</small></div>
+          <div class="signal signal3"><span class="signal-symbol">&euro;</span><b>PRORAČUN</b><small>Kaj je smiselno?</small></div>
+          <div class="link-line link1"></div><div class="link-line link2"></div><div class="link-line link3"></div>
+          <div class="engine-node">Drive<span>OP</span><small>OSEBNO UJEMANJE</small></div>
+          <div class="output-node"><div class="eyebrow">PREDLAGANI REZULTAT</div><strong>3 smeri.<br>1 tvoja odločitev.</strong><span>+ jasna razlaga</span></div>
+        </div>
+        <p class="source-line">Produktni koncept iz master briefa; kakovost priporočil se preveri v pilotu.</p>
+      </section>
+
+      <section class="slide product" id="s3" aria-label="3. Produkt in demonstracija">
+        <div class="demo-copy">
+          <div class="eyebrow">PRODUKT V AKCIJI <span class="status-chip">PROTOTIP</span></div>
+          <h1>Od občutka<br>do <em>utemeljene<br>izbire.</em></h1>
+          <div class="demo-tabs" role="tablist" aria-label="Koraki demonstracije">
+            <button type="button" role="tab" class="demo-tab selected" id="tab0" aria-controls="demo-visual" aria-selected="true" data-step="0"><span>01</span> TASTE</button>
+            <button type="button" role="tab" class="demo-tab" id="tab1" aria-controls="demo-visual" aria-selected="false" data-step="1"><span>02</span> KNOW</button>
+            <button type="button" role="tab" class="demo-tab" id="tab2" aria-controls="demo-visual" aria-selected="false" data-step="2"><span>03</span> MATCH</button>
+          </div>
+          <div class="demo-explanation" id="demo-explanation" aria-live="polite"><h3>Pokaži, kaj ti je všeč.</h3><p>Izbire avtomobilov razkrijejo tvoj okus.</p></div>
+          <div class="demo-actions"><button id="demo-pause" class="text-button" type="button">Ustavi demo</button><button id="demo-replay" class="text-button" type="button">&#8634; Od začetka</button><button id="demo-expand" class="text-button" type="button">&#8599; Povečaj</button></div>
+          <p class="demo-disclaimer">Dejanski zasloni in posnetka iz izvornega PPT-ja.<br>Prikazane cene, stroški in odstotki so demo podatki.</p>
+        </div>
+        <div class="demo-visual" id="demo-visual" role="tabpanel" aria-labelledby="tab0">
+          <div class="demo-glow"></div>
+          <div class="ghost-card ghost-left"><img src="assets/sport-card.webp" alt="Dodatna kartica avtomobila iz prototipa"></div>
+          <div class="phone primary-phone">
+            <div class="phone-top"><span></span><i></i></div>
+            <div class="phone-screen">
+              <img id="demo-still" src="assets/taste.webp" alt="TASTE: zaslon izbiranja avtomobilov">
+              <video id="demo-video" muted playsinline loop preload="metadata" poster="assets/know-poster.webp" aria-label="Animirani prikaz prototipa DriveOP"></video>
+            </div>
+            <div class="phone-home"></div>
+          </div>
+          <div class="demo-caption"><span class="small-dot"></span><span id="demo-media-label">TASTE &middot; statični zaslon</span></div>
+          <div class="demo-track"><span id="demo-progress"></span></div>
+          <div class="demo-play-fallback" id="demo-play-fallback" hidden><button type="button">Predvajaj posnetek</button></div>
+        </div>
+        <p class="source-line">Vodena demonstracija: 6 s TASTE + 20 s KNOW + 16 s MATCH. Ni povezave z aplikacijo v živo.</p>
+      </section>
+
+      <section class="slide light benefits" id="s4" aria-label="4. Koristi za kupca">
+        <div class="eyebrow">VREDNOST ZA KUPCA</div>
+        <h1>Manj ugibanja.<br><em>Več jasnosti.</em></h1>
+        <div class="benefit-grid">
+          <article><span class="mini-number">01 / IZBOR</span><p class="before">Seznam oglasov</p><span class="down-arrow">&darr;</span><h2>3 razumljive<br>smeri.</h2></article>
+          <article><span class="mini-number">02 / STROŠKI</span><p class="before">Samo nakupna cena</p><span class="down-arrow">&darr;</span><h2>Pogled na<br>lastništvo.</h2></article>
+          <article><span class="mini-number">03 / NASLEDNJI KORAK</span><p class="before">&raquo;Kaj pa zdaj?&laquo;</p><span class="down-arrow">&darr;</span><h2>Od izbora<br>do stika.</h2></article>
+        </div>
+        <div class="target-ribbon"><span>CILJ PILOTA</span><strong>&lt; 5 min</strong><p>do izbora, ki ga kupec zna utemeljiti.</p><small>Ni še izmerjen rezultat.</small></div>
+        <p class="source-line">Predlog vrednostne ponudbe in merljivega cilja; opis ne predstavlja že dokazanega prihranka.</p>
+      </section>
+
+      <section class="slide business" id="s5" aria-label="5. Poslovni model">
+        <div class="eyebrow">EN JASEN PRIHODKOVNI MODEL <span class="status-chip">PREDLOG</span></div>
+        <h1>Kupec dobi smer.<br><em>Prodajalec dobi namen.</em></h1>
+        <div class="business-layout">
+          <div class="lead-flow"><div class="flow-kicker">ZA KUPCA BREZPLAČNO</div><div class="flow-row"><div><b>01</b><h3>Profil</h3><p>Potrebe + proračun</p></div><span>&rarr;</span><div><b>02</b><h3>Privolitev</h3><p>Želim stik</p></div><span>&rarr;</span><div><b>03</b><h3>Sprejem</h3><p>Prodajalec potrdi</p></div></div><div class="trust-note"><span>&#9670;</span><p>Predlagano pravilo zaupanja:<br><strong>plačilo ne spreminja priporočil.</strong></p></div></div>
+          <div class="price-card"><div class="eyebrow">TESTNA CENA ZA PRODAJALCA</div><div class="price"><span data-bind="price">75</span><small>&euro;</small></div><p>za sprejeto<br><strong>kvalificirano povpraševanje</strong></p><div class="price-foot">Ne za klik. Ne za obljubljeno prodajo.</div></div>
+        </div>
+        <p class="source-line">Cena, plačnik in pogoji še niso validirani. Ena obračunska enota = eno unikatno sprejeto povpraševanje.</p>
+      </section>
+
+      <section class="slide light traction" id="s6" aria-label="6. Napredek in validacija">
+        <div class="eyebrow">OD PRIKAZA DO DOKAZA</div>
+        <h1>Prikaz imamo.<br><em>Dokaz trga sledi.</em></h1>
+        <div class="validation-layout">
+          <div class="proof-now"><span class="pill">DANES / V GRADIVU</span><h2>Uporabniški tok<br>TASTE &rarr; KNOW &rarr; MATCH</h2><p>Prikaz od okusa do priporočila.</p><div class="proof-steps"><span class="done">Prikaz</span><i></i><span>Uporabnost</span><i></i><span>Plačilo</span></div></div>
+          <div class="proof-target"><span class="pill">CILJ / NASLEDNJIH 6 MESECEV</span><div class="target-pair"><div><strong>100</strong><p>ciljnih kupcev<br>v testu</p></div><span>+</span><div><strong>3</strong><p>prodajalci, ki<br>plačajo znova</p></div></div><p class="proof-outcome">Ne več funkcij. Dokaz vrednosti.</p></div>
+        </div>
+        <p class="source-line">Cilji niso doseženi rezultati. Intervjuji, aktivni uporabniki in prihodki v prejetem gradivu niso dokumentirani.</p>
+      </section>
+
+      <section class="slide competition" id="s7" aria-label="7. Konkurenca in konkurenčna prednost">
+        <div class="eyebrow">FOKUS NAMESTO TRDITVE &raquo;NIMAMO KONKURENCE&laquo;</div>
+        <h1>Ne tekmujemo<br><em>v številu oglasov.</em></h1>
+        <div class="competition-layout">
+          <div class="landscape" role="table" aria-label="Pozicioniranje alternativ">
+            <div class="landscape-row" role="row"><div role="cell"><b>Oglasniki</b><small>npr. AutoScout24</small></div><p role="cell">Ponudba in iskanje avtomobilov.</p></div>
+            <div class="landscape-row" role="row"><div role="cell"><b>Carwow</b><small>Izbira + primerjava + ponudbe</small></div><p role="cell">Že rešuje del istega problema.</p></div>
+            <div class="landscape-row ours" role="row"><div role="cell"><b>DriveOP</b><small>Naš predlagani fokus</small></div><p role="cell">Okus + potrebe + stroški.<br><strong>Razložljiva osebna odločitev.</strong></p></div>
+          </div>
+          <div class="edge-panel"><span class="pill">PREDNOST, KI JO GRADIMO</span><h2>Vedeti,<br><em>zakaj je izbira<br>ustrezala.</em></h2><p>Lokalni fokus + povratne informacije o dejanskih izbirah.</p><small>Podatkovna prednost je načrt.<br>Ni še dokazan obrambni jarek.</small></div>
+        </div>
+        <p class="source-line">Vira: AutoScout24 in Carwow, pregled 21. 11. 2026. Primerjava fokusa, ne izčrpen seznam funkcij.</p>
+      </section>
+
+      <section class="slide why-now" id="s8" aria-label="8. Tržna priložnost in zakaj zdaj">
+        <div class="eyebrow">SLOVENIJA / NOVI OSEBNI AVTOMOBILI / 2025</div>
+        <h1>Pravi pogon je odvisen<br><em>od tvojega dneva.</em></h1>
+        <div class="why-data"><div class="why-stat"><strong>31<span>%</span></strong><p>hibridnih</p></div><div class="why-stat"><strong>11<span>%</span></strong><p>električnih</p></div><div class="why-question"><h2>Lahko polniš doma?<br>Koliko voziš?<br>Kaj si lahko privoščiš?</h2></div></div>
+        <div class="why-conclusion"><span>NAŠA TEZA</span><p>Več različnih pogonov.<br><strong>Večja vrednost osebne razlage.</strong></p></div>
+        <p class="source-line">Vir: SURS, Registrirana cestna motorna vozila in prikolice, 2025; objava 8. 4. 2026. Tržna interpretacija je naša.</p>
+      </section>
+
+      <section class="slide light market" id="s9" aria-label="9. Velikost trga TAM SAM SOM">
+        <div class="eyebrow">VELIKOST TRGA / PRIHODKI OD POVPRAŠEVANJ, NE VREDNOST AVTOV</div>
+        <h1>Slovenija za dokaz.<br><em>Evropa za rast.</em></h1>
+        <div class="market-grid">
+          <article><div class="market-tag">TAM <span>EU / NOVI AVTI</span></div><strong class="market-number">10,82<span>mio.</span></strong><p>novih registracij v 2025</p><div class="market-money">&asymp; <b data-bind="tam-millions">812</b> mio. &euro; / leto</div><small>Modelna zgornja meja<br>pri <span data-bind="price">75</span> &euro; na kontakt.</small></article>
+          <article><div class="market-tag">SAM <span>SLO / ZGORNJA MEJA</span></div><strong class="market-number" data-bind="si-market">56.778</strong><p>novih navadnih osebnih avtov v 2025</p><div class="market-money">&le; <b data-bind="sam-millions">4,26</b> mio. &euro; / leto</div><small>Pred zožitvijo na ciljni segment<br>in potrditvijo podatkovne pokritosti.</small></article>
+          <article class="som"><div class="market-tag">SOM <span>CILJNI SCENARIJ / LETO 3</span></div><strong class="market-number" data-bind="year3-leads">3.600</strong><p>plačanih povpraševanj na leto</p><div class="market-money"><b data-bind="year3-revenue">270.000</b> &euro; / leto</div><small><span data-bind="year3-partners">20</span> partnerjev &times; <span data-bind="year3-monthly">15</span> kontaktov<br>na mesec &times; 12 mesecev.</small></article>
+        </div>
+        <p class="source-line">Vira: ACEA in SURS, 2025. TAM/SAM: največ 1 plačan kontakt na registracijo. Cena in SOM sta predpostavki; rabljeni avti niso vključeni.</p>
+      </section>
+
+      <section class="slide financials" id="s10" aria-label="10. Finančni scenarij">
+        <div class="eyebrow">ILUSTRATIVNI SCENARIJ <span class="status-chip">NE DEJANSKI PRIHODKI</span></div>
+        <h1>Rast iz<br><em>preverljivih korakov.</em></h1>
+        <div class="financial-layout">
+          <div class="revenue-chart" role="img" aria-label="Modelni prihodki: 22.500 evrov v letu 1, 90.000 v letu 2, 270.000 v letu 3">
+            <div class="chart-unit">LETNI PRIHODKI (&euro;)</div><div class="chart-grid"><span>300k</span><span>200k</span><span>100k</span><span>0</span></div>
+            <div class="chart-bars">
+              <div class="bar-column"><div class="bar-block" data-bar="0"><b data-bind="year1-revenue-short">22,5k</b></div><h3>Leto 1</h3><p><span data-bind="year1-formula">5 &times; 5 &times; 12</span></p><small><span data-bind="year1-leads">300</span> kontaktov</small></div>
+              <div class="bar-column"><div class="bar-block" data-bar="1"><b data-bind="year2-revenue-short">90k</b></div><h3>Leto 2</h3><p><span data-bind="year2-formula">10 &times; 10 &times; 12</span></p><small><span data-bind="year2-leads">1.200</span> kontaktov</small></div>
+              <div class="bar-column"><div class="bar-block" data-bar="2"><b data-bind="year3-revenue-short">270k</b></div><h3>Leto 3</h3><p><span data-bind="year3-formula">20 &times; 15 &times; 12</span></p><small><span data-bind="year3-leads">3.600</span> kontaktov</small></div>
+            </div>
+          </div>
+          <div class="unit-economics"><div class="eyebrow">CILJ NA PLAČANO POVPRAŠEVANJE</div><div><span>Testna cena</span><b><span data-bind="price">75</span> &euro;</b></div><div><span>Variabilni stroški</span><b>&le; <span data-bind="variable-cost">25</span> &euro;</b></div><div class="unit-total"><span>Prispevek</span><b>&ge; <span data-bind="contribution">50</span> &euro;</b></div><p>Pred plačami, razvojem,<br>drugimi fiksnimi stroški in davki.</p><small>Vse vrednosti so predpostavke.<br>To ni napoved dobička.</small></div>
+        </div>
+        <p class="source-line">Formula: povprečno aktivni partnerji &times; sprejeti kontakti/mesec &times; 12 &times; testna cena. Prva polna modelna leta; zneski brez DDV.</p>
+      </section>
+
+      <section class="slide light team" id="s11" aria-label="11. Ekipa">
+        <div class="eyebrow">EKIPA DRIVEOP</div>
+        <h1>Posel in tehnologija.<br><em>En skupen cilj.</em></h1>
+        <div class="team-grid">
+          <article class="person"><img src="assets/christjan.webp" alt="Fotografija Christjana iz izvornega PPT-ja"><div><span class="mini-number">01 / POSLOVNA STRAN</span><h2>Christjan</h2><p>CEO &middot; CMO</p><small>Poslovni model<br>Marketing in prodaja</small></div></article>
+          <article class="person"><img src="assets/miha.webp" alt="Fotografija Mihe iz izvornega PPT-ja"><div><span class="mini-number">02 / INFORMACIJSKA STRAN</span><h2>Miha</h2><p>CIO</p><small>Informacijska zasnova<br>Produkt in podatki</small></div></article>
+        </div>
+        <div class="team-line">Naslednji skupni fokus: <strong>zanesljiv produkt + plačljiv pilot.</strong></div>
+        <p class="source-line">Imeni, vlogi in fotografiji: izvorni PPT, slajd 11. Skupni naslednji mejnik: validiran plačljiv pilot.</p>
+      </section>
+
+      <section class="slide ask" id="s12" aria-label="12. Potrebe in poraba sredstev">
+        <div class="eyebrow">EN VLOŽEK. EN MEJNIK. <span class="status-chip">DELOVNI PREDLOG / 6 MESECEV</span></div>
+        <div class="ask-layout"><div class="ask-left"><h1><span data-bind="ask">50.000</span> &euro;.<br><em>En jasen dokaz.</em></h1><div class="allocation-bar"><i></i><i></i><i></i><i></i></div><div class="allocations"><div><i></i><span>Produkt + podatki</span><b><span data-bind="fund0">25.000</span> &euro;</b></div><div><i></i><span>Pilot + pridobivanje kupcev</span><b><span data-bind="fund1">15.000</span> &euro;</b></div><div><i></i><span>Merjenje + zasebnost</span><b><span data-bind="fund2">5.000</span> &euro;</b></div><div><i></i><span>Rezerva</span><b><span data-bind="fund3">5.000</span> &euro;</b></div></div></div><div class="ask-right"><div class="eyebrow">KAJ MORA TA VLOŽEK DOKAZATI</div><div class="ask-target"><b>100</b><span>resničnih kupcev<br>v testu</span></div><div class="ask-target"><b>3</b><span>prodajalci plačajo<br>in naročilo ponovijo</span></div><div class="ask-milestone">VALIDIRAN PLAČLJIV PILOT</div></div></div>
+        <div class="closing-line">Ti ne iščeš avta. <em>Avto najde tebe.</em><span>DriveOP</span></div>
+        <p class="source-line">Predlog zneska in razreza, ne potrjena finančna potreba. Ustanovitelja ga potrdita in prilagodita pogojem natečaja.</p>
+      </section>
+      <div class="stage-bottom"><span id="slide-time">0:00 - 0:25</span><span id="slide-number">01 / 12</span></div>
+    </main>
+  </div>
+
+  <nav class="toolbar" id="toolbar" aria-label="Upravljanje predstavitve">
+    <div class="nav-left"><button type="button" id="prev" title="Prejšnji slajd (puščica levo)" aria-label="Prejšnji slajd">&#8592;</button><button type="button" id="next" title="Naslednji slajd (preslednica / puščica desno)" aria-label="Naslednji slajd">&#8594;</button><span id="nav-title">Problem</span></div>
+    <div class="slide-dots" id="slide-dots" aria-label="Skok na slajd"></div>
+    <div class="nav-right"><button type="button" id="timer-toggle" class="timer" title="Začni / ustavi vajo (T)"><span id="timer-value">5:00</span><span id="timer-label">Začni vajo</span></button><button type="button" id="notes-toggle" title="Govorne opombe (N)">Opombe</button><button type="button" id="sources-toggle" title="Viri in predpostavke (S)">Viri</button><button type="button" id="presenter-open" title="Ločeno govorniško okno (P)">Govornik</button><button type="button" id="fullscreen" title="Celozaslonsko (F)" aria-label="Celozaslonski prikaz">&#9974;</button><button type="button" id="help-toggle" title="Navodila (?)" aria-label="Navodila">?</button></div>
+  </nav>
+  <div class="overall-progress"><div id="overall-progress"></div></div>
+  <div class="sr-only" id="slide-announcement" aria-live="polite"></div>
+  <div class="toast" id="toast" role="status"></div>
+
+  <aside class="notes-drawer" id="notes-drawer" aria-label="Govorne opombe" hidden><div class="drawer-header"><div><span class="eyebrow">GOVOR / NI ZA PROJEKCIJO</span><h2 id="notes-title"></h2></div><button type="button" id="notes-close" aria-label="Zapri opombe">&times;</button></div><div class="notes-time" id="notes-time"></div><p id="notes-script"></p><h3>Režija nastopa</h3><p id="notes-cue"></p><div class="notes-warning">Za oder odpri ločeno okno &raquo;Govornik&laquo; in projiciraj samo predstavitev.</div></aside>
+
+  <dialog id="info-dialog" class="info-dialog"><div class="dialog-head"><div><span class="eyebrow" id="info-eyebrow">VIRI IN PREDPOSTAVKE</span><h2 id="info-title"></h2></div><button type="button" class="dialog-close" aria-label="Zapri">&times;</button></div><div id="info-content"></div></dialog>
+  <dialog id="demo-dialog" class="demo-dialog"><div class="dialog-head"><div><span class="eyebrow">POVEČAN PRIKAZ / POSNETEK PROTOTIPA</span><h2 id="zoom-title">DriveOP v akciji</h2></div><button type="button" class="dialog-close" aria-label="Zapri demonstracijo">&times;</button></div><div class="zoom-body"><div class="zoom-media"><img id="zoom-still" src="assets/taste.webp" alt="Povečan zaslon prototipa"><video id="zoom-video" muted playsinline loop controls aria-label="Povečan posnetek prototipa"></video></div><div class="zoom-side"><div class="zoom-tabs"><button type="button" data-zoom-step="0">01 TASTE</button><button type="button" data-zoom-step="1">02 KNOW</button><button type="button" data-zoom-step="2">03 MATCH</button></div><h3 id="zoom-copy"></h3><p id="zoom-description"></p><p class="zoom-disclaimer">To je prikaz iz izvornega PPT-ja, ne delujoča aplikacija. Vrednosti na zaslonih so demonstracijske.</p></div></div></dialog>
+
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+{
+  "currency": "EUR",
+  "price_per_accepted_lead": 75,
+  "target_variable_cost_per_lead": 25,
+  "eu_new_car_registrations_2025": 10822831,
+  "si_new_ordinary_car_registrations_2025": 56778,
+  "years": [
+    {
+      "year": 1,
+      "average_partners": 5,
+      "leads_per_partner_month": 5,
+      "accepted_leads": 300,
+      "revenue": 22500
+    },
+    {
+      "year": 2,
+      "average_partners": 10,
+      "leads_per_partner_month": 10,
+      "accepted_leads": 1200,
+      "revenue": 90000
+    },
+    {
+      "year": 3,
+      "average_partners": 20,
+      "leads_per_partner_month": 15,
+      "accepted_leads": 3600,
+      "revenue": 270000
+    }
+  ],
+  "ask": 50000,
+  "fund_allocation": [
+    25000,
+    15000,
+    5000,
+    5000
+  ]
+}
